@@ -46,7 +46,7 @@ def diffusion_process(data, timesteps):
     noise = torch.randn_like(data) * noise_factor
     return data + noise
 
-def random_search(train_data, input_dim, device, n_iter=20, epochs=1000):
+def random_search(train_data, input_dim, device, n_iter=20, epochs=10):
     best_params = None
     best_loss = float('inf')
 
